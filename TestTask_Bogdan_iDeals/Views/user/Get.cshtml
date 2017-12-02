@@ -1,0 +1,49 @@
+﻿@model TestTask_Bogdan_iDeals.ViewModels.UserGetUpdate
+
+@{
+    ViewBag.Title = "Get";
+}
+
+<h2>Get</h2>
+
+<div>
+    <h4>User detailes:</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mobilephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mobilephone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Update", "Update", "User") 
+</p>
